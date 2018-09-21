@@ -16,6 +16,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -35,9 +36,12 @@ public class SpringBootWebApplicationTests {
     @Autowired
     private Image imageRequest;
 
+    @Value("${tomcat.port}")
+    String port;
+
     @Before
     public void createObjects() throws JSONException, IOException {
-        request.given().baseUri("http://localhost:8081/api/")
+        request.given().baseUri("http://localhost:" + port + "/api/")
                 .contentType(ContentType.JSON);
 
         //Send POST request
