@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.zuulDemo.model;
 
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package com.mkyong;
+package com.zuulDemo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mkyong.model.Image;
+import com.zuulDemo.model.Image;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
