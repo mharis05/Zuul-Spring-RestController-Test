@@ -59,6 +59,7 @@ public class SpringBootWebApplicationTests {
     }
 
     @Test
+    // Verify the encoded value is in fact test
     public void testImageHasCorrectValue() {
 
         String actualBase64Value = imageResponse.getImage();

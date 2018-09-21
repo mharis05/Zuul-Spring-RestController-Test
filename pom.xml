@@ -40,14 +40,6 @@
             <scope>test</scope>
         </dependency>
 
-
-        <!-- Optional, for bootstrap -->
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>3.3.7</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -60,12 +52,6 @@
             <artifactId>rest-assured</artifactId>
             <version>3.0.0</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20160810</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -88,8 +74,6 @@
 			<version>3.8.0</version>
 			<scope>test</scope>
 		</dependency>
-
-
 
 	</dependencies>
 	<build>
