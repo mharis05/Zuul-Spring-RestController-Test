@@ -18,6 +18,8 @@ There are two tests:
 ## How to run Tests:
 Note: There is no need to run the tomcat web server manually in order to run tests as the tests are annotated by `SpringBootTest` with configured `webEnvironment` due to which, Apache Tomcat server spins up before any test is executed and closes afterwards.
 
+You can also change the port used by zuul to communicate with the server by changing `tomcat.port` property in `application.properties`
+
 ### Steps: 
 0. Make sure Zuul proxy is up and running 
 
