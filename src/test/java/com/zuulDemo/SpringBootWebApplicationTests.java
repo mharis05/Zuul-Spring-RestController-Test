@@ -19,10 +19,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.io.IOException;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
@@ -41,6 +39,8 @@ public class SpringBootWebApplicationTests {
 
     @Before
     public void createObjects() throws JSONException, IOException {
+
+        // Prepare request headers and baseURI
         request.given().baseUri("http://localhost:" + port + "/api/")
                 .contentType(ContentType.JSON);
 
@@ -73,6 +73,7 @@ public class SpringBootWebApplicationTests {
 
     @After
     public void performAsserts() {
+        // Perform all assertions after all tests have been executed
         softly.assertAll();
     }
 

@@ -13,6 +13,7 @@ public class RestController {
 
     private String image;
 
+    // Post Controll that returns its payload as Response
     @PostMapping("/api/image")
 	public String imageRequest(@RequestBody String body) {
 		return body;

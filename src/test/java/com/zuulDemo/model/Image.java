@@ -1,5 +1,4 @@
 package com.zuulDemo.model;
-
 import org.springframework.stereotype.Component;
 
 @Component
