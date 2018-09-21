@@ -16,7 +16,7 @@ There are two tests:
 2. Verify the encoded value is in fact as provided in the initial payload
 
 ## How to run Tests:
-Note: There is no need to run the tomcat web server manuall in order to run tests as the tests are annotated by `SpringBootTest` with configured `webEnvironment`
+Note: There is no need to run the tomcat web server manually in order to run tests as the tests are annotated by `SpringBootTest` with configured `webEnvironment` due to which, Apache Tomcat server spins up before any test is executed and closes afterwards.
 
 ### Steps: 
 0. Make sure Zuul proxy is up and running 
