@@ -22,8 +22,8 @@ Note: There is no need to run the tomcat web server manually in order to run tes
 0. Make sure Zuul proxy is up and running 
 
 #### IDE:
-1. Execute @Test method if you need to execute a particular test (Tests are independent)
-2. Execute `SpringBootWebApplicationTests` class to execute all tests
+1. Run desired @Test method in `SpringBootWebApplicationTests` class (/src/test/java/com/zuulDemo/SpringBootWebApplicationTests.java) if you need to execute a particular test (Tests are independent)
+2. Run `SpringBootWebApplicationTests` class to execute all tests
 
 #### Maven:
 1. Run command: `mvn test` or `mvn clean test`
